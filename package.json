@@ -1,0 +1,51 @@
+{
+  "name": "@eyalm321/datetime-mcp",
+  "version": "1.0.0",
+  "description": "MCP server providing datetime awareness via tools and resources",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "datetime-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "datetime",
+    "timezone",
+    "claude",
+    "model-context-protocol",
+    "time"
+  ],
+  "author": "Eyalm321",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eyalm321/datetime-mcp.git"
+  },
+  "homepage": "https://github.com/Eyalm321/datetime-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Eyalm321/datetime-mcp/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  }
+}
