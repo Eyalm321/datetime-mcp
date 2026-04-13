@@ -1,6 +1,6 @@
 {
   "name": "@eyalm321/datetime-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server providing datetime awareness via tools and resources",
   "type": "module",
   "main": "dist/index.js",
