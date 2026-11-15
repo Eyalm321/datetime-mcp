@@ -23,7 +23,7 @@ const DEFAULT_TIMEZONE = process.env.MCP_TIME_TIMEZONE ?? "America/New_York";
 
 const server = new McpServer({
   name: "mcp-time",
-  version: "1.0.0",
+  version: "1.0.2",
 });
 
 // ---------------------------------------------------------------------------
